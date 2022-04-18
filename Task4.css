@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200;1,300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: rgb(211, 223, 212);
+}
+.container {
+  width: 320px;
+  background: #eee;
+  margin: 40px auto;
+  border-radius: 10px;
+}
+#wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+}
+#wrapper > button {
+  cursor: pointer;
+  outline: none;
+  font-size: 1.8rem;
+  border: 1px solid rgb(207, 207, 207);
+}
+#wrapper > button:hover {
+  background-color:rgb(112, 140, 167);
+}
+.span-two {
+  grid-column: span 2;
+}
+.output {
+  grid-column: 1 /-1;
+  background: #f2f5f7;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 1rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.output .previous-operand {
+  color: #000;
+  font-size: 1.2rem;
+}
+.output .current-operand {
+  color: #000;
+  font-size: 2rem;
+}
